@@ -22,27 +22,41 @@
         .card-img-top {
             height: 200px;
             object-fit: cover;
-            
+
         }
 
-       
+
 
         .card {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            
+
             border: none;
+
+
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);      
+            cursor: pointer;     
+            transition: transform 0.3s ease;
             
         }
 
+        .bg-color{
+            background-color:#124E66 ;
+        }
 
-       
-        
+        .text-color{
+            color: #14a99f;
+        }
     </style>
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Md Joynal Abedin</span>
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -70,12 +84,12 @@
             <div class="resume-section-content">
                 <h1 class="mb-0">
                     Md Joynal
-                    <span class="text-primary">Abedin</span>
+                    <span class="text-color">Abedin</span>
                 </h1>
                 <div class="subheading mb-5">
                     Khandokarbari, Wazzuddin Road,
                     Vatara Dhaka
-                    <a href="mailto:joynalmdabedin440@gmail.com">joynalmdabedin440@gmail.com</a>
+                    <a class="text-color" href="mailto:joynalmdabedin440@gmail.com">joynalmdabedin440@gmail.com</a>
                 </div>
                 <p class="lead mb-5">I am a dedicated MERN stack developer with 2 years of hands-on experience in
                     crafting dynamic and responsive web applications. My proficiency lies in leveraging the power of
@@ -109,27 +123,29 @@
         <hr class="m-0" />
         <!-- Experience-->
         <section class="resume-section" id="projects">
-            <div class="container py-5"> 
-                <h1 class="text-center mb-4">My Projects</h1> 
+            <div class="container py-5">
+                <h1 class="text-center text-color mb-4">My Projects</h1>
 
                 <div class="row">
 
                     <!-- Project Card 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> 
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/arrayDestruct.jpg" class="card-img-top" alt="Project 1 Image"
-                                style="object-fit: cover; height: 250px;"> 
+                            <img src="./assets/img/assets/portfolio/arrayDestruct.jpg" class="card-img-top"
+                                alt="Project 1 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
-                                
+
                                 <h5 class="card-title">ThoughtBin</h5>
-                                <p class="card-text">ThoughtBin is a modern frontend website designed for reading and managing blogs. Users can explore blogs, save their favorite ones to bookmarks, and mark blogs as read. This project leverages a custom API for blog content, TailwindCSS for styling, and React for building an interactive user experience.</p>
-                                <div class="mt-auto"> 
-                                    <a href="https://github.com/joynalmdabedin440/ThoughtBin-" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    
-                                    <a href="https://obsequious-look.surge.sh/"
-                                    target="_blank" 
-                                    
-                                    class="btn btn-success">Live Website</a>
+                                <p class="card-text">ThoughtBin is a modern frontend website designed for reading and
+                                    managing blogs. Users can explore blogs, save their favorite ones to bookmarks, and
+                                    mark blogs as read. This project leverages a custom API for blog content,
+                                    TailwindCSS for styling, and React for building an interactive user experience.</p>
+                                <div class="mt-auto">
+                                    <a href="https://github.com/joynalmdabedin440/ThoughtBin-" target="_blank"
+                                        class="btn btn-outline-primary me-2">GitHub Repo</a>
+
+                                    <a href="https://obsequious-look.surge.sh/" target="_blank"
+                                        class="btn btn-success">Live Website</a>
                                 </div>
                             </div>
                         </div>
@@ -138,14 +154,20 @@
                     <!-- Project Card 2 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/installNode.jpg" class="card-img-top" alt="Project 2 Image"
-                                style="object-fit: cover; height: 250px;">
+                            <img src="./assets/img/assets/portfolio/installNode.jpg" class="card-img-top"
+                                alt="Project 2 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">The Daily Feed</h5>
-                                <p class="card-text">The Daily Feed is a responsive front-end web application build with react that delivers real-time news articles on a variety of topics, complete with user authentication for personalized access. Built with modern web technologies, the app ensures a seamless user experience across devices and secure login functionality using firebase authentication.</p>
+                                <p class="card-text">The Daily Feed is a responsive front-end web application build with
+                                    react that delivers real-time news articles on a variety of topics, complete with
+                                    user authentication for personalized access. Built with modern web technologies, the
+                                    app ensures a seamless user experience across devices and secure login functionality
+                                    using firebase authentication.</p>
                                 <div class="mt-auto">
-                                    <a href="https://github.com/joynalmdabedin440/the-daily-feed" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    <a href="https://the-daily-feed-83f19.web.app/category/01" target="_blank" class="btn btn-success">Live Website</a>
+                                    <a href="https://github.com/joynalmdabedin440/the-daily-feed" target="_blank"
+                                        class="btn btn-outline-primary me-2">GitHub Repo</a>
+                                    <a href="https://the-daily-feed-83f19.web.app/category/01" target="_blank"
+                                        class="btn btn-success">Live Website</a>
                                 </div>
                             </div>
                         </div>
@@ -154,14 +176,17 @@
                     <!-- Project Card 3 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/navbar.jpg" class="card-img-top" alt="Project 3 Image"
-                                style="object-fit: cover; height: 250px;">
+                            <img src="./assets/img/assets/portfolio/navbar.jpg" class="card-img-top"
+                                alt="Project 3 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Ema-John</h5>
-                                <p class="card-text"> This is an e-commerce website with a React frontend and Firebase authentication system integrated.</p>
+                                <p class="card-text"> This is an e-commerce website with a React frontend and Firebase
+                                    authentication system integrated.</p>
                                 <div class="mt-auto">
-                                    <a href="https://github.com/joynalmdabedin440/amazon-shopping-site-with-auth" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    <a href="https://shopping-site-with-auth.web.app/" target="_blank" class="btn btn-success">Live Website</a>
+                                    <a href="https://github.com/joynalmdabedin440/amazon-shopping-site-with-auth"
+                                        target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
+                                    <a href="https://shopping-site-with-auth.web.app/" target="_blank"
+                                        class="btn btn-success">Live Website</a>
                                 </div>
                             </div>
                         </div>
@@ -170,14 +195,17 @@
                     <!-- Project Card 4 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/reactParallax.jpg" class="card-img-top" alt="Project 4 Image"
-                                style="object-fit: cover; height: 250px;">
+                            <img src="./assets/img/assets/portfolio/reactParallax.jpg" class="card-img-top"
+                                alt="Project 4 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">BookHaven </h5>
-                                <p class="card-text">BookHaven is a book-reading web application where users can read books and add them to their wishlist.</p>
+                                <p class="card-text">BookHaven is a book-reading web application where users can read
+                                    books and add them to their wishlist.</p>
                                 <div class="mt-auto">
-                                    <a href="https://github.com/joynalmdabedin440/Book-Haven" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    <a href="https://fuzzy-tramp.surge.sh/" target="_blank" class="btn btn-success">Live Website</a>
+                                    <a href="https://github.com/joynalmdabedin440/Book-Haven" target="_blank"
+                                        class="btn btn-outline-primary me-2">GitHub Repo</a>
+                                    <a href="https://fuzzy-tramp.surge.sh/" target="_blank" class="btn btn-success">Live
+                                        Website</a>
                                 </div>
                             </div>
                         </div>
@@ -186,14 +214,17 @@
                     <!-- Project Card 5 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/usestate.jpg" class="card-img-top" alt="Project 5 Image"
-                                style="object-fit: cover; height: 250px;">
+                            <img src="./assets/img/assets/portfolio/usestate.jpg" class="card-img-top"
+                                alt="Project 5 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Quiz Contest</h5>
-                                <p class="card-text">This is a concept-cracker website where users can participate in various quizzes and assess their abilities.</p>
+                                <p class="card-text">This is a concept-cracker website where users can participate in
+                                    various quizzes and assess their abilities.</p>
                                 <div class="mt-auto">
-                                    <a href="https://github.com/joynalmdabedin440/Assignment-9" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    <a href="https://enchanting-brioche-d2fb69.netlify.app/home" target="_blank" class="btn btn-success">Live Website</a>
+                                    <a href="https://github.com/joynalmdabedin440/Assignment-9" target="_blank"
+                                        class="btn btn-outline-primary me-2">GitHub Repo</a>
+                                    <a href="https://enchanting-brioche-d2fb69.netlify.app/home" target="_blank"
+                                        class="btn btn-success">Live Website</a>
                                 </div>
                             </div>
                         </div>
@@ -202,15 +233,20 @@
                     <!-- Project Card 6 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card h-100">
-                            <img src="./assets/img/assets/portfolio/reactSmooth.jpg" class="card-img-top" alt="Project 6 Image"
-                                style="object-fit: cover; height: 250px;">
+                            <img src="./assets/img/assets/portfolio/reactSmooth.jpg" class="card-img-top"
+                                alt="Project 6 Image" style="object-fit: cover; height: 250px;">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">ThoughtGatherer</h5>
                                 <p class="card-text">About
-                                    ThoughtGatherer A smart blog aggregator that helps you discover, organize, and explore knowledge from new and trending blogs. ThoughtGatherer simplifies learning by curating meaningful insights from across the web, making it easier to stay informed and inspired. Perfect for researchers, students, and lifelong learners.</p>
+                                    ThoughtGatherer A smart blog aggregator that helps you discover, organize, and
+                                    explore knowledge from new and trending blogs. ThoughtGatherer simplifies learning
+                                    by curating meaningful insights from across the web, making it easier to stay
+                                    informed and inspired. Perfect for researchers, students, and lifelong learners.</p>
                                 <div class="mt-auto">
-                                    <a href="https://github.com/joynalmdabedin440/ThoughtGatherer?tab=readme-ov-file" target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
-                                    <a href="https://soft-daffodil-10ecec.netlify.app/" target="_blank" class="btn btn-success">Live Website</a>
+                                    <a href="https://github.com/joynalmdabedin440/ThoughtGatherer?tab=readme-ov-file"
+                                        target="_blank" class="btn btn-outline-primary me-2">GitHub Repo</a>
+                                    <a href="https://soft-daffodil-10ecec.netlify.app/" target="_blank"
+                                        class="btn btn-success">Live Website</a>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +259,7 @@
         <!-- Education-->
         <section class="resume-section" id="education">
             <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
+                <h2 class="mb-5 text-color">Education</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Presidency University</h3>
@@ -256,7 +292,7 @@
         <section class="resume-section" id="skills">
 
             <div class="container">
-                <h2 class="text-center mb-4">My Skills</h2>
+                <h2 class="text-center mb-4 text-color">My Skills</h2>
 
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover table-striped text-center">
@@ -357,7 +393,7 @@
         <!-- Interests-->
         <section class="resume-section" id="interests">
             <div class="container">
-                <h2 class="text-center mb-4">My Interests</h2>
+                <h2 class="text-center mb-4 text-color">My Interests</h2>
 
                 <div class="row g-4">
                     <!-- Coding Card -->
@@ -415,7 +451,7 @@
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
+                <h2 class="mb-5 text-color">Awards & Certifications</h2>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
@@ -442,15 +478,19 @@
             </div>
 
         </section>
+        <hr class="m-0" />
 
         <!-- Resume -->
         <section class="resume-section" id="resume">
-            <h1>Resume</h1>
-
-            <iframe src="./resume/resume.pdf" height="100%" width=" 100%"></iframe>
-            
-
+            <div class=" resume-section-content">
+                <h1 class="text-color">Resume</h1>
+                <p>
+                    Click <a href="https://drive.google.com/file/d/14mElPQ-xZOEZsILGVjy4SGW7uzGDi2FX/view?usp=sharing"
+                        target="_blank">here</a> to view my resume.
+                </p>
+            </div>
         </section>
+
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
